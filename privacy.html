@@ -10,70 +10,102 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}blockquote{border-left:4px solid var(--acc);margin:1em 0;padding:4px 14px;color:var(--mut)}
 hr{border:0;border-top:1px solid var(--line)}
 </style></head><body><main><nav><a href="index.html">DragonRunners</a><a href="privacidad.html">Español</a></nav><h1>DragonRunners Privacy Policy</h1>
-<p><strong>Last updated:</strong> October 6, 2026<br>
-<strong>Data controller:</strong> AMZ STUDIO<br>
-<strong>Privacy contact:</strong> dragonrunners.soporte@gmail.com</p>
+<p><strong>Last updated:</strong> October 8, 2026<br>
+<strong>App:</strong> DragonRunners (virtual reality game for Meta Quest, published on the Meta Horizon Store)<br>
+<strong>Data controller:</strong> AMZ STUDIO (United States)<br>
+<strong>Privacy contact and data deletion requests:</strong> dragonrunners.soporte@gmail.com</p>
 <hr>
-<h2>1. What DragonRunners is</h2>
-<p>DragonRunners is a free virtual reality game for Meta Quest in which you play as a dragon, alone or online with other people. This policy explains what data is processed when you play, what for, how long it is kept, who it is shared with and what rights you have.</p>
-<p>In short:</p>
-<ul><li><strong>No advertising</strong> and no third-party analytics or tracking tools in the game.</li><li><strong>We do not sell your data.</strong></li><li><strong>Your voice is not recorded.</strong> It is sent in real time to nearby players and is not stored.</li><li>Error reports are <strong>optional</strong> and <strong>off by default</strong>.</li></ul>
-<h2>2. Minimum age</h2>
-<p>The game is intended for <strong>people aged 13 or over</strong>. Meta does not allow children under 10 to use apps from the Meta Horizon Store, and accounts for ages 10 to 12 are managed by parents or guardians under Meta's social restrictions. We do not knowingly collect data from children under 13. If you believe a child under 13 has provided data (for example, a name that appears in a report), write to dragonrunners.soporte@gmail.com and we will delete it.</p>
-<h2>3. What data we process, what for, and on what basis</h2>
+<h2>1. Summary</h2>
+<p>This policy applies only to the DragonRunners app. In short:</p>
+<ul><li>We collect only the data needed to run the game. This includes your <strong>Meta user ID</strong>, your <strong>Meta display name (user profile)</strong>, your <strong>in-app purchase records</strong>, a one-time identity code, your <strong>IP address</strong>, your head and controller position, your voice (live only, if you allow the microphone), your Scales wallet, optional error reports and, if you report someone or are reported, <strong>moderation reports</strong>. Section 2 lists every item.</li><li><strong>Your voice is never recorded or stored.</strong> It is relayed live to nearby players only.</li><li><strong>No advertising, no third-party analytics, no tracking, and we never sell your data.</strong></li><li><strong>Any user, anywhere, can ask us to delete their data at any time, for free and without giving a reason</strong> (section 7).</li></ul>
+<h2>2. Data we collect</h2>
+<h3>2.1 Data we receive from Meta (Meta Horizon Platform)</h3>
 <div class="tabla"><table>
-<thead><tr><th>Data</th><th>Where it comes from</th><th>What it is used for</th><th>Is it stored</th></tr></thead><tbody>
-<tr><td><strong>Display name of your Meta account (or, if it has none, your Meta username), your Meta user ID and a one-time identity code</strong></td><td>Your account, through the Meta Platform SDK (the game reads only these items: it does not read your friends, picture, email or messages)</td><td>Showing your name to other players (after a name filter: <strong>if you play with your account, they see your Meta display name</strong>), confirming with Meta that you are who you say you are (our server sends the user ID and the one-time code to Meta and Meta answers yes or no) and checking which purchases you have made. The license check (that you own the app) is done by Meta's SDK on your headset and gives the game no additional data</td><td>The name stays in server memory while you are in the room. The ID and the code are used for checks with Meta and are <strong>not stored as is</strong>: the code is discarded when used and only an unrecognizable digest of the ID is stored, as the key of your Scales wallet and, if needed, of a report or ban (see “Scales wallet” and section 4)</td></tr>
-<tr><td><strong>Voice</strong> (microphone)</td><td>Your microphone, with your permission</td><td>Talking to nearby players. It is compressed in real time and the server only relays it to players within 40 meters</td><td><strong>It is not recorded or stored.</strong> It is not included in reports</td></tr>
-<tr><td><strong>Head and hand position, dragon look, match state</strong></td><td>The game, while you play online</td><td>Letting others see you, and letting the server validate tag hits and races</td><td>Only during the session; not stored when you leave</td></tr>
-<tr><td><strong>IP address and connection data</strong></td><td>Your internet connection (unavoidable when connecting to a server)</td><td>Keeping the connection, limiting abuse (report frequency) and enforcing bans</td><td>In memory while connected. The reported or banned player's IP is stored in reports and bans (see below)</td></tr>
-<tr><td><strong>Moderation reports</strong></td><td>When another player reports you (or you report someone)</td><td>Reviewing conduct that breaks the rules</td><td>Yes: see section 4</td></tr>
-<tr><td><strong>Bans</strong></td><td>A moderation decision</td><td>Stopping a banned player from returning to a room (by connection and, if they have a verified Meta account, by account, so changing network is not enough)</td><td>Yes: see section 4</td></tr>
-<tr><td><strong>Error reports (optional)</strong></td><td>Your device, only if you turn them on in Settings</td><td>Finding and fixing bugs</td><td>Yes, see section 4</td></tr>
-<tr><td><strong>Scales wallet</strong>: installation ID, Scales balance, cosmetics bought with Scales, date of your last gift and movement log</td><td>The game: the <strong>installation ID</strong> is a random number the game creates the first time it runs (it is not your name, your account or your headset identifier); if you use your Meta account, your Meta ID is used instead. The rest is generated by the server</td><td>Giving you the Scales gift when you connect (at most once every 7 hours), charging your purchases made with Scales, remembering what you bought and giving support (refunds, errors). The limit of gifts per IP address (to stop abuse) is applied in memory only</td><td>Yes: on the server, in <code>wallets.json</code>, linked to an <strong>unrecognizable digest</strong> of the installation ID or Meta ID (not the ID itself), and in <code>wallet_log.jsonl</code>, which only carries a short unrecognizable account code (no IP, no name). A <strong>copy</strong> of the balance and of what you own is saved on your device to show it offline</td></tr>
-<tr><td><strong>Real-money purchases</strong></td><td>Meta (payment is made through Meta)</td><td>Crediting the Scales packs you buy and verifying on the server that the payment is real</td><td>Meta keeps the payment record. The server checks the purchase with Meta and only stores the purchase identifier so it is not credited twice; it does not store payment data</td></tr>
-<tr><td><strong>Game settings</strong> (volume, vignette, chosen dragon, colors, best times, whether you accepted the rules…)</td><td>You</td><td>Remembering your preferences</td><td>Only on your device (local settings file). Deleted when you uninstall the game</td></tr>
+<thead><tr><th>Data</th><th>What it is</th></tr></thead><tbody>
+<tr><td><strong>Meta user ID</strong></td><td>The numeric identifier of your Meta account for this app.</td></tr>
+<tr><td><strong>User profile: display name</strong></td><td>The display name of your Meta account (if it has none, your Meta username). We do <strong>not</strong> access your profile picture, friends, email, messages or presence.</td></tr>
+<tr><td><strong>One-time identity code (nonce)</strong></td><td>A single-use code from your headset that lets our server confirm with Meta that your account is real.</td></tr>
+<tr><td><strong>In-app purchase records</strong></td><td>The purchase identifier and product code (SKU) of the Scales packs (and of any cosmetic bought directly) you buy through Meta. Payment details stay with Meta: we never receive your card or bank data.</td></tr>
+<tr><td><strong>Reports made through Meta's reporting service</strong></td><td>If a player uses the "Report" option in the Meta menu, Meta emails us the reason chosen and the data Meta includes about the reported player (such as their display name). We keep it like our own reports (section 4).</td></tr>
 </tbody></table></div>
-<p><strong>Legal bases</strong> (if GDPR or an equivalent law applies to you): performance of the service you request by playing (name, connection, voice, position); our legitimate interest in keeping a safe community and preventing abuse (reports, bans, rate limits); your consent (microphone, optional error reports); and compliance with legal obligations (purchases).</p>
+<h3>2.2 Data we receive from your Meta Quest headset</h3>
+<div class="tabla"><table>
+<thead><tr><th>Data</th><th>What it is</th></tr></thead><tbody>
+<tr><td><strong>Voice (microphone)</strong></td><td>Only if you allow the microphone permission.</td></tr>
+<tr><td><strong>Head and controller position</strong></td><td>Used to move your dragon.</td></tr>
+<tr><td><strong>Game settings</strong></td><td>Volume, comfort options, language, chosen dragon, colors, best times, whether you accepted the rules, the display names of players you muted or blocked, a local copy of your Scales balance and purchases, and the identifiers of purchases already credited. They stay on your headset.</td></tr>
+</tbody></table></div>
+<h3>2.3 Data created while you play</h3>
+<div class="tabla"><table>
+<thead><tr><th>Data</th><th>What it is</th></tr></thead><tbody>
+<tr><td><strong>IP address and connection data</strong> (your IP address, the port and a connection number our server assigns to you, and the times you connect and disconnect)</td><td>Unavoidable when connecting to our game server.</td></tr>
+<tr><td><strong>Installation ID</strong></td><td>A random identifier the game creates the first time it runs (it is not your name, account or headset serial). It is sent to our server when you connect and is not stored on our server.</td></tr>
+<tr><td><strong>Live game data</strong></td><td>Your dragon's look, position and match state.</td></tr>
+<tr><td><strong>Scales wallet</strong></td><td>Your Scales balance, cosmetics bought with Scales, the identifiers of the Scales packs you bought (so they are never credited twice), date of your last free gift and a log of wallet movements. It is linked to a <strong>one-way hash (digest)</strong> of your Meta user ID, never to the ID itself. The hash cannot be turned back into your ID, but we still treat it as your personal data: it is deleted when you ask (section 7).</td></tr>
+<tr><td><strong>Moderation reports and bans</strong></td><td>If someone reports you or you report someone: date, room, display names and connection numbers, the reported player's IP address and an unrecognizable digest of their Meta account, and the reason chosen from a fixed list (harassment, offensive language, cheating, other).</td></tr>
+<tr><td><strong>Error reports (optional, off by default)</strong></td><td>The game's latest error messages (cleaned of file paths, emails, IP addresses and names), the game and engine version, your headset model, performance level and refresh rate, the date, and a keyed digest of your IP address (kept only so we can find and delete your reports if you ask). Only sent if you turn them on in Settings.</td></tr>
+</tbody></table></div>
+<h2>3. How we use each piece of data</h2>
+<div class="tabla"><table>
+<thead><tr><th>Data</th><th>How we use it</th></tr></thead><tbody>
+<tr><td><strong>Meta user ID</strong></td><td>(1) Our server sends it with the one-time identity code to Meta to confirm your account is real. (2) Our server sends it to Meta to read which in-app purchases (Scales packs and any cosmetic bought directly) you have paid for and not yet received, so each purchase is credited exactly once. (3) A digest of it (never the ID itself) is the key of your Scales wallet and lets moderation recognize a banned account.</td></tr>
+<tr><td><strong>Display name (user profile)</strong></td><td>Shown to the other players in your room so you can recognize each other. It passes through a name filter first.</td></tr>
+<tr><td><strong>One-time identity code</strong></td><td>Sent once to Meta to verify your account; then discarded.</td></tr>
+<tr><td><strong>In-app purchase records</strong></td><td>Crediting the Scales you bought and preventing the same purchase from being credited twice.</td></tr>
+<tr><td><strong>Voice</strong></td><td>Talking to nearby players: it is compressed in real time and relayed by the server only to players within 40 meters. Never recorded, stored or included in reports.</td></tr>
+<tr><td><strong>Head and controller position, live game data</strong></td><td>Showing your dragon to other players and letting the server validate tags and races.</td></tr>
+<tr><td><strong>IP address and connection data</strong></td><td>Keeping you connected, limiting abuse (for example, too many reports or gifts) and enforcing bans.</td></tr>
+<tr><td><strong>Scales wallet</strong></td><td>Giving you the free Scales gift (at most once every 7 hours), charging what you buy with Scales, remembering what you own and giving support (refunds, errors).</td></tr>
+<tr><td><strong>Moderation reports and bans</strong></td><td>Reviewing behavior that breaks the community rules and keeping banned players out.</td></tr>
+<tr><td><strong>Installation ID</strong></td><td>Identifying your connection to the server during the session. Not stored on our server.</td></tr>
+<tr><td><strong>Error reports</strong></td><td>Finding and fixing bugs.</td></tr>
+<tr><td><strong>Game settings</strong></td><td>Remembering your preferences. They stay only on your headset.</td></tr>
+</tbody></table></div>
+<p>We do not use any of this data for advertising, profiling, marketing or analytics, and we do not sell it.</p>
 <h2>4. How long we keep data</h2>
 <div class="tabla"><table>
-<thead><tr><th>Data</th><th>Period</th></tr></thead><tbody>
-<tr><td>Voice</td><td>Not stored (0 seconds)</td></tr>
-<tr><td>Position, look and match state</td><td>Only for the length of the session</td></tr>
-<tr><td><strong>Moderation reports</strong> (date, room, names and connection numbers of the reporter and the reported player, the reported player's IP address and, if they had a verified Meta account, an unrecognizable digest of it (used as keys to recognize them across connections and networks), and the reason from a fixed list: harassment, offensive language, cheating or other)</td><td><strong>90 days</strong>, then deleted automatically (the server checks at startup and every 6 hours). No ban lasts that long (30 days at most), so a ban never extends how long a report is kept</td></tr>
-<tr><td><strong>Bans</strong> (banned player's IP address and, if they have a verified Meta account, an unrecognizable digest of it; date, short reason and duration)</td><td>Until the ban <strong>expires</strong> (1 hour by default; 30 days at most); expired bans are removed from the file at the next check (every 6 hours at most)</td></tr>
-<tr><td><strong>Error reports</strong> (the game's latest error messages, cleaned of file paths, emails, IP addresses and your name; no audio; linked to a short unrecognizable code, not to your name)</td><td><strong>30 days</strong>, then deleted automatically</td></tr>
-<tr><td>Temporary mute by vote (several players report the same person)</td><td>A few minutes; memory only</td></tr>
-<tr><td><strong>Scales wallet</strong> (ID digest, balance, purchases, date of last gift)</td><td>While the account is active. Wallets with no activity (no gift, purchase or movement) for <strong>24 months</strong> are deleted automatically and, in any case, whenever you ask (section 8). The file's internal backup copies are overwritten as they are renewed while the server is used (every 6 hours at most, three copies); if you ask for deletion they are cleaned too</td></tr>
-<tr><td>Wallet movement log (<code>wallet_log.jsonl</code>, no IP or name)</td><td>Rotates by itself: at most 5 files of 1 MB (a few months of movements). Deleting a wallet also deletes its lines</td></tr>
-<tr><td>Log of rights requests handled (date, type and counts; no names, keys or codes)</td><td>Rotates by itself: at most 3 files of 64 KB</td></tr>
-<tr><td>Settings and local copy of the balance and purchases</td><td>On your device, until you uninstall the game or clear its data. <strong>If you uninstall the game and do not use your Meta account, your wallet is orphaned</strong> (the installation ID is lost)</td></tr>
+<thead><tr><th>Data</th><th>How long</th></tr></thead><tbody>
+<tr><td>Voice</td><td>Not stored at all</td></tr>
+<tr><td>Head and controller position, live game data, display name</td><td>Only while you are in the room (your display name is also kept inside a moderation report if one is made, for the 90 days stated below)</td></tr>
+<tr><td>IP address and connection data</td><td>In server memory only while you are connected. The IP address of a reported or banned player is kept inside that report or ban (90 days / until the ban expires) and deleted with it</td></tr>
+<tr><td>One-time identity code</td><td>Discarded right after the check</td></tr>
+<tr><td>Meta user ID</td><td>Not stored as is; only its unrecognizable digest, as part of the wallet, reports or bans</td></tr>
+<tr><td>Installation ID</td><td>Not stored on our server; it stays on your headset until you uninstall the game</td></tr>
+<tr><td>In-app purchase identifiers</td><td>Inside your Scales wallet, for as long as the wallet exists</td></tr>
+<tr><td><strong>Moderation reports</strong></td><td><strong>90 days</strong>, then deleted automatically</td></tr>
+<tr><td><strong>Bans</strong></td><td>Until they expire (30 days at most), then deleted automatically</td></tr>
+<tr><td><strong>Error reports</strong></td><td><strong>30 days</strong>, then deleted automatically</td></tr>
+<tr><td><strong>Scales wallet</strong></td><td>While you keep playing. Wallets with no activity for <strong>24 months</strong> are deleted automatically, and at any time if you ask (section 7)</td></tr>
+<tr><td>Wallet movement log</td><td>Kept in at most 5 rotating files of 1 MB each (in practice a few months of movements); older lines are overwritten automatically. Deleting a wallet also deletes its lines</td></tr>
+<tr><td>Game settings and local copy of your balance</td><td>On your headset until you uninstall the game or clear its data</td></tr>
 </tbody></table></div>
-<p>Payment data and purchase history are kept by <strong>Meta</strong>, under its own policies.</p>
+<p>The server checks and deletes expired data at startup and every 6 hours. Meta keeps your payment records under its own privacy policy.</p>
 <h2>5. Who we share data with</h2>
-<ul><li><strong>Other players in your room</strong> see your display name, your dragon's look and position, and hear your voice if you are nearby and they have not muted you.</li><li><strong>Meta Platforms</strong> (Meta Horizon): your account, license and purchases are handled through Meta, which processes its data under its own privacy policy. To check your account and your payments, <strong>our server queries Meta</strong> (graph.oculus.com), sending your Meta user ID and the one-time identity code, and the user ID to read which packs you have paid for and have not been credited yet. We do not send Meta your reports or your voice.</li><li><strong>Meta's reporting service</strong>: if you use the "Report" button in the Meta menu inside the game, the report is collected by Meta's reporting service and reaches us by email (the reason chosen and the data Meta includes about the reported player, such as their display name). We use it only to review the reported conduct and keep it like the other reports (90 days).</li><li><strong>Server provider</strong>: the game servers are hosted by DigitalOcean, in the United States. It acts as a data processor and accesses data only to provide hosting.</li><li><strong>Authorities</strong>: only if a law or a valid court order requires us to.</li></ul>
-<p>We do not sell personal data, we do not use it for advertising and we do not pass it to analytics or marketing companies.</p>
-<h2>6. International transfers</h2>
-<p>If your country is different from the one where the server is hosted, your connection data will be transferred to that country. The server is located in the United States, so your connection and match data are processed there.</p>
-<h2>7. Security</h2>
-<p>Connections to the game server are validated on the server (for example impossible positions, report frequency and report size). Only the people in charge of moderation have access to reports and bans. No system is perfect: if we detect a breach that affects you, we will tell you as the law requires.</p>
-<h2>8. Your rights and how to use them</h2>
-<p>You can ask us, <strong>free of charge</strong>, at any time, to:</p>
-<ul><li><strong>Access</strong>: tell you whether we process data about you and which.</li><li><strong>Rectify</strong>: correct inaccurate data.</li><li><strong>Delete</strong>: erase your data (for example reports or bans that mention you).</li><li><strong>Object or restrict</strong>: stop processing it in certain cases.</li><li><strong>Port</strong>: give you your data in a common format.</li><li><strong>Withdraw consent</strong>: you can turn off error reports in Settings and revoke the microphone permission in your Quest headset settings at any time.</li></ul>
-<h3>How to request deletion of your data</h3>
-<ol><li>Send an email to <strong>dragonrunners.soporte@gmail.com</strong> with the subject <strong>“Delete my data”</strong>.</li><li>Write your Meta username and the approximate date you played. To delete your Scales wallet and purchases, add the 10-character <strong>support code</strong> shown on the Wardrobe board in the game.</li><li>We delete your data and confirm by email within <strong>30 days</strong> (usually much sooner). It is free.</li></ol>
-<p>The same steps, on their own page: <a href="delete-data.html">Data deletion instructions</a>.</p>
-<h3>The rest of your rights</h3>
-<p>To use any of the rights above, write to <strong>dragonrunners.soporte@gmail.com</strong> with your Meta username and the approximate date you played. For anything about your Scales or purchases, add the 10-character <strong>support code</strong> shown on the Wardrobe board in the game: that lets us find your wallet without knowing your name. We will answer within <strong>30 days</strong>. We never charge for handling these requests. If you are not satisfied, you may complain to the data protection authority of your country.</p>
-<p><strong>What we do with your request:</strong> <em>Deletion</em>: we delete everything that mentions you from the reports in which you appear as the reported player, from bans and from error reports linked to your username or connection; if you appear as the person who made a report, we remove your name from it and keep the report (it is about someone else). Your Scales wallet, with its support code, is deleted entirely, also from the internal backup copies and the movement log (you lose the balance and what you bought). <em>Access and portability</em>: we send you a JSON file with what we keep about you. We only keep your request as a note with no personal data (date, type and counts).</p>
-<p><strong>Residents of California and other US states:</strong> we do not sell or share your personal information for targeted advertising. You can exercise your access and deletion rights using the same email address.</p>
-<p><strong>Deleting your data in your Meta account:</strong> you manage your Meta account data from your Meta account settings.</p>
-<h2>9. Headset permissions</h2>
-<p>The game asks for <strong>microphone</strong> permission (only for voice between players) and <strong>internet</strong> access (to play online). You can deny the microphone: the game keeps working without voice. We do not ask for camera, location, contacts or storage.</p>
-<h2>10. Data the game does not collect</h2>
-<p>We do not collect your location, contacts, photos or recordings of your room, biometric data, eye or face tracking, or health data. The game uses your head and controller positions only to move your dragon in real time.</p>
-<h2>11. Changes to this policy</h2>
-<p>If we make a significant change to this policy, we will update the date above and notify you in the game or on the store listing before the change takes effect.</p>
-<h2>12. Contact</h2>
+<ul><li><strong>Other players in your room</strong> see your display name, your dragon's look and position, and hear your voice if they are nearby and have not muted you.</li><li><strong>Meta Platforms</strong>: our server sends your Meta user ID and the one-time identity code to Meta (graph.oculus.com) to verify your account and your purchases, as described in section 3. If you use the "Report" option in the Meta menu, Meta's reporting service sends us the report by email; we use it only to review that behavior and keep it like other reports (90 days).</li><li><strong>DigitalOcean</strong> (our server hosting provider, in the United States) stores and processes the server data only to host the game, on our behalf.</li><li><strong>Authorities</strong>, only if a valid law or court order requires it.</li></ul>
+<p>We do not sell, rent or share your data with advertisers, analytics companies or data brokers.</p>
+<h2>6. Where data is processed</h2>
+<p>Our game server is hosted in the United States. If you play from another country, your connection and game data are transferred to and processed in the United States.</p>
+<h2>7. Requesting data deletion (all users)</h2>
+<p><strong>Every user, wherever they live and whatever their age, can ask us to delete their data at any time. It is free, you do not need to give a reason and we do not need to approve it.</strong></p>
+<ol><li>Send an email to <strong>dragonrunners.soporte@gmail.com</strong> with the subject <strong>"Delete my data"</strong>.</li><li>Tell us your Meta username or the display name you use in the game, so we can find the reports and bans that mention you. Error reports contain no name: we locate them through the connection recorded in any report about you or, if there is none, through the IP address you played from, if you choose to give it to us; in any case they are deleted automatically after 30 days at most. To delete your Scales wallet as well, add the 10-character <strong>support code</strong> shown on the Wardrobe board in the game when you are online: the wallet is stored only under an unrecognizable digest, so that code is the only way we can find it. If you no longer have access to the game, tell us and we will help you find it.</li><li>We delete your data and confirm it by email within <strong>30 days</strong> (usually much sooner).</li></ol>
+<p><strong>What we delete:</strong> your Scales wallet (including its backups and movement log), the reports and bans in which you appear as the reported player, and error reports linked to you. If you made a report about someone else, we remove your name and connection number from it and keep the rest of the report, because it describes another player's conduct and no longer contains any data about you. Deleting your wallet also deletes the Scales and cosmetics in it. We keep no other data after a deletion request, and there is no legal reason that would stop us from fulfilling one.</p>
+<p>If you delete your Meta account, we no longer receive anything about you; the data we still hold expires automatically (section 4) or is deleted on request as described here.</p>
+<p>The same instructions are on their own page: <a href="delete-data.html">Data deletion instructions</a>.</p>
+<p>You can also delete the data stored on your headset yourself by uninstalling the game, and manage your Meta account data from your Meta account settings.</p>
+<h2>8. Your other rights</h2>
+<p>Every user, wherever they live, can also ask us at any time, free of charge, to:</p>
+<ul><li><strong>Access</strong> the data we keep about them, or receive a copy in a common format (JSON).</li><li><strong>Correct</strong> inaccurate data.</li><li><strong>Object to or restrict</strong> some processing.</li><li><strong>Withdraw consent</strong>: turn off error reports in Settings and revoke the microphone permission in the Quest headset settings at any time.</li></ul>
+<p>Write to <strong>dragonrunners.soporte@gmail.com</strong> and we will answer within <strong>30 days</strong>. You may also complain to your local data protection authority.</p>
+<h2>9. Children</h2>
+<p>DragonRunners is intended for people aged 13 or older. We do not knowingly collect data from children under 13. If you believe a child under 13 has given us data, write to dragonrunners.soporte@gmail.com and we will delete it. This does not limit section 7: every user of any age can request deletion.</p>
+<h2>10. Security</h2>
+<p>The game server validates everything players send (for example, impossible positions and too many reports). Only the people in charge of moderation can see reports and bans. Account IDs are stored only as one-way hashes. If a security breach affects your data, we will notify you and the competent authority without undue delay. To report a security vulnerability in the game or the server, write to dragonrunners.soporte@gmail.com with the subject "Security".</p>
+<h2>11. Headset permissions</h2>
+<p>The game asks for the <strong>microphone</strong> (only for voice chat between players) and <strong>internet</strong> access (to play online). You can deny the microphone and the game keeps working without voice. We do not ask for the camera, location, contacts or storage.</p>
+<h2>12. Data we do not collect</h2>
+<p>We do not collect your location, contacts, photos, recordings of your room, biometric data, eye or face tracking, or health data.</p>
+<h2>13. Changes to this policy</h2>
+<p>If we make a significant change, we will update the date at the top and tell players in the game or on the store listing before it takes effect.</p>
+<h2>14. Contact</h2>
 <p>AMZ STUDIO<br>
 dragonrunners.soporte@gmail.com</p></main></body></html>
